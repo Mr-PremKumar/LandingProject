@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  transition: 0.9s;
+  scroll-behavior: smooth;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: snow;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.icon {
+  display: flex;
+}
+
+.icon img {
+  margin: 0 10px;
+}
+
+.branding {
+  text-align: center;
+}
+.branding h4{
+  letter-spacing: 5px;
+  word-spacing: 8px;
+}
+
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+#search-input {
+  padding: 10px;
+  background-color: rgba(221, 225, 235, 0.7);
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+#search-button {
+  background-color: rgb(142, 183, 238);
+  padding: 10px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  color: white;
+}
+
+#demo {
+  word-spacing: 5px;
+  letter-spacing: 1.4px;
+  color: rgb(192, 192, 192);
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(241, 235, 217);
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: rgb(153, 146, 146);
+  padding: 10px 20px;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url(./pexels-olly-3768172.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  text-align: left;
+  padding: 150px 80px;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: 2px solid rgba(105, 165, 165, 0.8);
+  background-color: rgba(136, 177, 177, 0.8);
+  color: white;
+  margin-right: 20px;
+}
+
+/* Statistics Section */
+.stats {
+  display: flex;
+  justify-content: center;
+  background-color: snow;
+  text-align: center;
+  padding: 50px 20px;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  flex: 1;
+  min-width: 200px;
+  margin: 20px;
+}
+
+/* Welcome Section */
+.welcome {
+  display: flex;
+  background-color: rgb(236, 236, 236);
+  padding: 60px 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.welcome-image {
+  flex: 1;
+  padding: 20px;
+}
+
+.welcome-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.welcome-text {
+  flex: 1;
+  padding: 20px;
+}
+
+.welcome-text h5 {
+  color: salmon;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.welcome-text h1 {
+  margin-top: 10px;
+}
+
+.welcome-text p {
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
+/* New Releases Section */
+.new-releases {
+  background-color: #E8DFE0;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.new-releases h4 {
+  color: salmon;
+  margin-bottom: 20px;
+}
+
+.new-releases .books {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.new-releases .book {
+  flex: 1;
+  min-width: 200px;
+  max-width: 250px;
+  margin: 20px;
+  text-align: center;
+}
+
+.new-releases .book img {
+  width: 100%;
+  height: auto;
+}
+
+.new-releases .price {
+  color: salmon;
+}
+
+.new-releases h5 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/* Footer */
+.footer {
+  background-color: rgb(8, 7, 7);
+  color: #f5dfe2;
+  padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 20px;
+}
+.footer-section  a{
+  text-decoration: none;
+  color:#E8DFE0;
+}
+
+.footer-section h2 {
+  margin-bottom: 20px;
+}
+
+.footer-section p,
+.footer-section ul {
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section img {
+  margin-top: 12px 0;
+  background-color: #E8DFE0;
+}
+
+.footer-bottom {
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin-top: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .hero {
+    text-align: center;
+    padding: 100px 20px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .btn {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .welcome {
+    flex-direction: column;
+  }
+
+  .stats {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .header,
+  .navbar {
+    flex-direction: column;
+  }
+
+  .search-bar {
+    margin-top: 20px;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer-section {
+    margin: 20px 0;
+  }
+}
